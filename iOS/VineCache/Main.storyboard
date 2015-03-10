@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eB1-Mu-OFX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eB1-Mu-OFX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -41,7 +41,7 @@
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="flower-vine-hi" translatesAutoresizingMaskIntoConstraints="NO" id="Nk2-0H-ceq">
-                                <rect key="frame" x="31" y="99" width="538" height="461"/>
+                                <rect key="frame" x="67" y="113" width="466" height="447"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNB-va-HfV" customClass="FBLoginView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -113,12 +113,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqz-iX-i3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="547.5" y="389"/>
+            <point key="canvasLocation" x="-143" y="65"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Video View Controller-->
         <scene sceneID="DDA-7z-R1o">
             <objects>
-                <viewController id="OD4-aI-vDK" sceneMemberID="viewController">
+                <viewController id="OD4-aI-vDK" customClass="DisplayVideoViewController" customModule="VineCache" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="52F-qc-OQd"/>
                         <viewControllerLayoutGuide type="bottom" id="psi-b9-EBT"/>
@@ -126,12 +126,83 @@
                     <view key="view" contentMode="scaleToFill" id="FLQ-kW-TFv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Microsoft Hunt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6W-gs-LP2">
+                                <rect key="frame" x="45" y="50" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find the location this video was taken:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-Ky-puK">
+                                <rect key="frame" x="45" y="86" width="301" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0eq-7E-G04">
+                                <rect key="frame" x="45" y="553" width="510" height="2"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" playsSound="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                            </progressView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-mY-8Jy" customClass="UIToolbar">
+                                <rect key="frame" x="45" y="124" width="510" height="351"/>
+                                <connections>
+                                    <segue destination="jqg-V3-hsJ" kind="embed" id="93Z-vo-okW"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQA-15-YEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="388"/>
+            <point key="canvasLocation" x="516" y="65"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="kgu-zA-8MT">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="svZ-qu-hhp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0M8-e7-xnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="777"/>
+        </scene>
+        <!--Upload Video View Controller-->
+        <scene sceneID="CJf-Ln-B0y">
+            <objects>
+                <viewController id="Qsd-aA-s8M" customClass="UploadVideoViewController" customModule="VineCache" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XRh-YO-wJH"/>
+                        <viewControllerLayoutGuide type="bottom" id="elL-MF-75w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r8N-dK-e2W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0k-zI-B0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="777"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eb7-aK-C8Z">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jqg-V3-hsJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VnJ-dE-FEX"/>
+                        <viewControllerLayoutGuide type="bottom" id="CmH-8g-vYI"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hf0-my-B5w">
+                        <rect key="frame" x="0.0" y="0.0" width="510" height="351"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKf-wD-U5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="-499.5"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8404D8571AAF955D00EEE085 /* UploadVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D8561AAF955D00EEE085 /* UploadVideoViewController.swift */; };
+		8404D8591AAFA18400EEE085 /* DisplayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D8581AAFA18400EEE085 /* DisplayVideoViewController.swift */; };
 		D94572EF1AAA4DD50020403B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94572EC1AAA4DD50020403B /* Bolts.framework */; };
 		D94572F01AAA4DD50020403B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94572ED1AAA4DD50020403B /* FacebookSDK.framework */; };
 		D94572F11AAA4DD50020403B /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94572EE1AAA4DD50020403B /* FBAudienceNetwork.framework */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8404D8561AAF955D00EEE085 /* UploadVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadVideoViewController.swift; sourceTree = "<group>"; };
+		8404D8581AAFA18400EEE085 /* DisplayVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayVideoViewController.swift; sourceTree = "<group>"; };
 		D94572EC1AAA4DD50020403B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D94572ED1AAA4DD50020403B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		D94572EE1AAA4DD50020403B /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				D95E73021AA978AF00DA1771 /* Images.xcassets */,
 				D95E72F71AA978AF00DA1771 /* Supporting Files */,
 				D95E731D1AA9804A00DA1771 /* Main.storyboard */,
+				8404D8561AAF955D00EEE085 /* UploadVideoViewController.swift */,
+				8404D8581AAFA18400EEE085 /* DisplayVideoViewController.swift */,
 				D94572F91AAA57D10020403B /* StartupViewController.swift */,
 			);
 			path = VineCache;
@@ -244,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8404D8571AAF955D00EEE085 /* UploadVideoViewController.swift in Sources */,
 				D95E72FE1AA978AF00DA1771 /* SecondViewController.swift in Sources */,
+				8404D8591AAFA18400EEE085 /* DisplayVideoViewController.swift in Sources */,
 				D95E72FA1AA978AF00DA1771 /* AppDelegate.swift in Sources */,
 				D95E72FC1AA978AF00DA1771 /* FirstViewController.swift in Sources */,
 				D94572FA1AAA57D10020403B /* StartupViewController.swift in Sources */,
